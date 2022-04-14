@@ -7,7 +7,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-data = pd.read_csv('data.csv')
+data = pd.read_csv('https://raw.githubusercontent.com/maryclarecc/mentalhealthML/main/data.csv')
 regr = setup(data = data, target = 'dx_dep1', session_id=123,
                   normalize = True, 
                   silent = True,
@@ -24,7 +24,7 @@ regr = setup(data = data, target = 'dx_dep1', session_id=123,
 
 # model = pickle.load(open("log_regr_pipeline.pkl","rb"))
 # model = load_model('log_regr_pipeline_v2')
-model = load_model('rf_pipeline')
+model = load_model('log_regr_pipeline_v2')
 # columns need to be original column names at setup - not transformed dataset
 cols = ["hours_work_paid", "age", "bmi", "residenc", "timeclass", "BRS_1", "BRS_3", "BRS_5", "belong8", "educ_par2"]
 # prediction = "Test"
