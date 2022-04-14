@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Site</title>
+
+  Allow: GET, POST, HEAD
+
+ <!-- CSS only -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <!-- Leaflet CSS -->
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+ integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+ crossorigin=""/>
+
+  <!-- Our CSS -->
+ <link rel="stylesheet" type="text/css" href="../static/css styles/main.css">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+</head>
+
+<body>
+
+<div class="split">
+<div class="split left">
+<body style="background-color:#162942">
+  <body style="background-color:#162942">
+    <div class="navbar">
+      <a class="active" href="/">Home</a>
+      <a href="/resources">Support Resources</a>
+      <a href="/detecting">Detecting Depression</a>
+    </div>
+    <br>
+    <br>
+    <br>  
+  <div class="main">
+    <center><img src="../static/graphics/Untitled design (2).png" alt="Sad" style="width:800px;height:80%"></center>
+    </div>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centeredmh">
+    <h1><strong>Detecting<br>Depression</strong></h1>
+    <br>
+    <br>
+    <div class="surveytext">
+    <p>The survey below was developed based on findings from a 2016 survey conducted by 
+      The Healthy Minds Network to help decet warning signs of depression.<br><br>HMN is one of the nation’s premier research organizations 
+      contributing to adolescent/young adult mental health and is dedicated to improving 
+      the mental and emotional well-being of young people through innovative, multidisciplinary 
+      scholarship.<br><br></p>
+      
+    <p style="font-size:16px"><em>This survey should not be taken in place 
+      of a mental health evaluation by a medical professional. We hope that whatever 
+      the results, you feel empowered to take the next steps in addressing your mental health 
+      and supportig those in need.</em></p>
+  <br>
+  </div>
+    <div>
+      <div class="form"> 
+      <form action="/results.html"method="POST">
+        <label for="hrsworked">What is the average amount of hours you spent working for money in college?</label>
+        <br>
+        <input type="text" id="hrsworked" name="hoursworked" placeholder="Hours Worked.." required="required">
+        <br>
+        <br>
+        <label for="age">Provide your age.</label>
+        <br>
+        <input type="text" id="age" name="age" placeholder="Age." required="required">
+        <br>
+        <br>
+        <label for="BMI">Provide your BMI.</label>
+        <br>
+        <input type="text" name="BMI" placeholder="BMI" placeholder="Provide your BMI."required="required">
+        <br>
+        <p><iframe src="https://bmicalculatorusa.com/widgets-usa/widget.php?t=720x300" width="600" height="300" frameborder="0"></iframe><p style="font-family: sans-serif; font-size: 14px"></a></p></p>
+        <br>
+        <br>
+        <label for="Residency">Where did you live while in college?</label>
+        <br>
+        <select id="Residency" name="Residency" required="required">
+          <option value="" disabled selected hidden>Select an Option</option>
+          <option value="1">On-campus housing, residence hall</option>
+          <option value="2">On-campus housing, apartment</option>
+          <option value="3">Fraternity or sorority house</option>
+          <option value="4">On- or off-campus co-operative housing</option>
+          <option value="5">Off-campus, non-university housing </option>
+          <option value="6">With my parents (or relatives)</option>
+          <option value="7">Other</option>
+        </select>
+        <br>
+        <br>
+        <label for="ClassTime">How much time do you spend during the typical week attending class?</label>
+        <br>
+        <select id="ClassTime" name="ClassTime" required="required">
+          <option value="" disabled selected hidden>Select an Option</option>
+          <option value="1">Less than 1 hour/week</option>
+          <option value="2">1-2 hours/week</option>
+          <option value="3">3-5 hours/week</option>
+          <option value="4">6-10 hours/week</option>
+          <option value="5">11-15 hours/week</option>
+          <option value="6">16-20 hours/week</option>
+          <option value="7">More than 20 hours/week</option>
+        </select>
+        <br>
+        <br>
+        <label for="Bounce">I tend to bounce back quickly after hard times.</label>
+        <br>
+        <select id="Bounce" name="Bounce" required="required">
+          <option value="" disabled selected hidden>Select an Option</option>
+          <option value="1">Strongly disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly agree</option>
+        </select>
+        <br>
+        <br>
+        <label for="Bounce2">It does not take me long to recover from a stressful event.</label>
+        <br>
+        <select id="Bounce2" name="Bounce2" required="required">
+          <option value="" disabled selected hidden>Select an Option</option>
+          <option value="1">Strongly disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly agree</option>
+        </select>
+        <br>
+        <br>
+        <label for="Bounce3">I usually come through difficult times with little trouble.</label>
+        <br>
+        <select id="Bounce3" name="Bounce3" required="required">
+          <option value="" disabled selected hidden>Select an Option</option>
+          <option value="1">Strongly disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly agree</option>
+        </select>
+        <br>
+        <br>
+        <label for="Bounce4">How much do you agree with the following statement?: I feel isolated from campus life.</label>
+        <br>
+        <select id="Bounce4" name="Bounce4" required="required">
+          <option value="" disabled selected hidden>Select an Option</option>
+          <option value="1">Strongly disagree</option>
+          <option value="2">Disagree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Agree</option>
+          <option value="5">Strongly agree</option>
+        </select>
+        <br>
+        <br>
+        <label for="Bounce5">What is the highest level of education completed by your parents or stepparents?</label>
+        <br>
+        <select id="Bounce5" name="Bounce5" required="required">
+          <option value="" disabled selected hidden>Select an Option</option>
+          <option value="1">8th grade or lower</option>
+          <option value="2">Between 9th and 12th grade (but no high school degree)</option>
+          <option value="3">High school degree</option>
+          <option value="4">Associate's degree</option>
+          <option value="5">Bachelor's degree</option>
+          <option value="6">Graduate degree</option>
+          <option value="7">Don't Know</option>
+        </select>
+        <br>
+        <br> 
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        <!-- <a target="_blank" href="/results.html">SUBMIT</a></button></center> -->
+        <br>
+      </form>
+        
+        <br>
+        <br>
+        {{ prediction_text }}  
+    </div>    
+    </div>
+    </div>
+</div>
+</div>
+
+
+<!-- </form> -->
+</body>
+
+
+
+
