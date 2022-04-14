@@ -1,5 +1,6 @@
 pandas
-scipy<=1.5.4
+scipy
+numpy
 seaborn
 matplotlib
 IPython
@@ -14,16 +15,15 @@ textblob
 cufflinks>=0.17.0
 umap-learn
 pyLDAvis
-gensim<4.0.0
-spacy<2.4.0
+gensim
+spacy
 nltk
 mlxtend>=0.17.0
 pyod
 pandas-profiling>=2.8.0
 kmodes>=0.10.1
 mlflow
-imbalanced-learn==0.7.0
+imbalanced-learn
 scikit-plot #for lift and gain charts
 Boruta
-pyyaml<6.0.0
-numba<0.55
+numba
